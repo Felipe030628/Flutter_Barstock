@@ -1,0 +1,19 @@
+name: barstock
+description: "Un nuevo proyecto de Flutter para BarStock"
+publish_to: 'none' # Evita que se publique por error en pub.dev
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
