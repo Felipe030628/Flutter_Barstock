@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'theme/app_theme.dart';
-import 'views/login_view.dart';
+import 'views/clientes/bienvenida_cliente_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,11 @@ class BarstockApp extends StatelessWidget {
       title: 'Barstock',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark,
-      home: const LoginView(),
+      // El cliente que escanea el QR de su mesa llega directo aquí:
+      // solo le pedimos nombre y correo, sin contraseña. El acceso del
+      // personal (login con contraseña) queda como un botón discreto
+      // dentro de BienvenidaClienteView.
+      home: const BienvenidaClienteView(),
     );
   }
 }
